@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Think India</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"style="background-image:url(images/nit-patna.png);"></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#" class="nav-link"><span>About Us</span></a></li>
+	          <li class="nav-item"><a href="#" class="nav-link"><span>Event</span></a></li>
+	          <li class="nav-item"><a href="#" class="nav-link"><span>Gallary</span></a></li>
+			  <li class="nav-item"><a href="#" class="nav-link"><span>Teams</span></a></li>
+	          <li class="nav-item"><a href="#" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/think.jpeg); border-radius: 100% ;margin-top: 50px;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading"></span>
+			            <h1 class="mb-4 mt-3">Welcome To<br><span>Think India </span>x  NITP <br></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Student Chapter ',
+						// 'YouTuber  ',
+						// 'Teacher   ',
+
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h3>Join Us to grow our community</h3>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/company/tectonix-nitp/" class="btn btn-primary py-3 px-4">Linkedin</a> 
+							<a href="https://www.instagram.com/thinkindia_nitp?igsh=MW9jZDY0Ynl0Mnplcg==" class="btn btn-white btn-outline-white py-3 px-4">Instagram</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								
+
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    
+		<div class="row">
+			<h1 class="big-4">About Us</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row"style="display: flex;">
+				<div class="col-md-6" style="display: flex;" >
+					<div class="resume-wrap ftco-animate">
+						<h2>Overview</h2>
+						
+						<p class="mt-4">‘Think India’ was initiated in 2006 by students of IISc, IIM B and other premier institutions at Bengaluru,
+							 India. It is an initiative to bring together the best talent and intellectual human resource of the country and to
+							  infuse in them a 'Nation First' attitude. It is an active forum of researchers, professionals and students
+							  
+							  where they deliberate their thoughts, opinions and actions on issues of national importance and raise
+							 
+							  their concerns and over innovative and feasible solutions to the problems. It overs to be a 
+							  platform for the Leaders of Tomorrow. 
+							
+						</p>
+						
+						
+					</div>
+					
+
+				</div>
+				<div class="col-md-6" style="display: flex;">
+					<div class="resume-wrap ftco-animate" >
+						<h2>Vision</h2>
+					
+						<p class="mt-4">Think India is a manifestation of the vision to connect the students across India's
+							 educational Institutes to a nationalistic thought process and to harness their collective potentials 
+							 towards the aim of national reconstruction. We, as a pan-India organization, have been striving to bring 
+							 together the best talents & minds of the country and infuse in them a nation-first attitude, to develop in them 
+							 a solution-oriented thinking process, and to inspire young India to serve the society.
+							
+						</p>
+								
+						
+					</div>
+				</div>
+				</div>
+				
+		
+
+		<div class="row">
+			<h1 class="big-4">Events</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		<div class="event" style="display: flex; justify-content: space-evenly;">
+			<div class="evt">
+				<div class="block-20 zoom-effect" style="height: 20vw; width: 20vw; background-color: rgb(35, 102, 160); background-image: url('images/event7.jpg'); background-size: cover; background-position: center; border-radius: 5px;"></div>
+				<h5 class="head"><a href="#">for the most anticipated coding <bR>event of the year whether  you
+					<br> are a biginner or a coding pro!</a></h5>
+			</div>
+			
+			<div class="evt">
+				<div class="block-20 zoom-effect" style="height: 20vw; width: 20vw; background-color: rgb(35, 102, 160); background-image: url('images/event9.jpg'); background-size: cover; background-position: center; border-radius: 5px;"></div>
+				<h5 class="head"><a href="#">for the most anticipated coding <bR>event of the year whether  you
+					<br> are a biginner or a coding pro!</a></h5>
+			</div>
+			<div class="evt">
+				<div class="block-20 zoom-effect"style="height: 20vw; width: 20vw; background-color: rgb(35, 102, 160); background-image: url('images/event7.jpg'); background-size: cover; background-position: center; border-radius: 5px;"></div>
+				<h5 class="head"><a href="#">for the most anticipated coding <bR>event of the year whether  you
+					<br> are a biginner or a coding pro!</a></h5>
+			</div>
+
+
+		</div>
+		
+
+		
+		
+			
+	
+
+		<br>
+		<br>
+
+		
+		<br>
+		
+			
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Gallary</h1>
+            <h2 class="mb-4">Gallary</h2>
+            <p>Below are our some momerable moments.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/event1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">Glimpses of VAAD-VIVAAD AVLOKAN held on TCF'24</a></h3>
+            
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/event2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">Celebrating the outstanding achievements of the AVLOKAN</h3>
+          
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/event4.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">Glimpses of 'PLACED UNPLACED' Aptitude test</a></h3>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/event8.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="#">Glimpse of KHOJ-BIN held on TCF'24</a></h3>
+				 
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/event6.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="#">Glimpses of VAAD-VIVAAD AVLOKAN held on TCF'24</a></h3>
+				 
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+	<div class="row">
+		<h1 class="big-4">Our Teams</h1>
+		<div class="underline"></div>
+	</div>
+	<br>
+	
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <!-- <strong class="number" data-number="20">0</strong> -->
+                <span class="block-4 zoom-effect">  Technical</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <!-- <strong class="number" data-number="30">0</strong> -->
+                <span class="block-4 zoom-effect">Web Team</span>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <!-- <strong class="number" data-number="30">0</strong> -->
+                <span class="block-4 zoom-effect">Anorid Team</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <!-- <strong class="number" data-number="1000">0</strong> -->
+                <span class="block-4 zoom-effect">Design Team</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <!-- <strong class="number" data-number="500">0</strong> -->
+                <span class="block-4 zoom-effect">Content Team</span>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <!-- <strong class="number" data-number="1000">0</strong> -->
+                <span class="block-4 zoom-effect">PR Team</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/thinkindiaorg_cover.jpg); height: 30vw;opacity: 0.2;">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						
+						<!-- <div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4> -->
+						<br>
+					
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact </h1>
+            <h2 class="mb-4">Contact Us</h2>
+            <p>Below are the details to reach out to us!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+         
+          
+         
+         
+
+		  <div class="container">
+			<br>
+			<br>
+			
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find us on  </li>
+					  <li class="ftco-animate"><a href="#"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/company/tectonix-nitp/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://m.facebook.com/thinkindianitp/"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/thinkindia_nitp?igsh=MW9jZDY0Ynl0Mnplcg=="><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfq714mMYbSk5ljHIHMdJc5JlK_Ydor00aXeE-IsWzbsbyp8Q/viewform" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+					</div>
+				</div>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p>
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
+</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
